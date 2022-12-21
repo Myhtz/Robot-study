@@ -1,0 +1,145 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Colors
+$gradient-color: linear-gradient(91.77deg, #5D35B5 0%, #C067D1 98.9%);
+$primary-color:#703EBB;
+$secundary-color: #C167D1;
+$details: #9E51AD;
+$white:#fff;
+// End of Colors
+
+// Header
+.bg-nav {
+  background: $gradient-color;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0;
+
+  .logo {
+    align-self: center;
+  }
+
+  .navegation {
+    color: $white;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+  }
+
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+
+  li {
+    padding-top: 25px;
+    position: relative;
+  }
+
+  li::after {
+    content: "";
+    height: 22px;
+    width: 2px;
+    background:$details;
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  // End of Header
+
+}
+
+// Banner
+.banner {
+  background-image: url(../imgs/bg-index.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .banner-write {
+    color:$white;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Roboto';
+    font-size: 48px;
+    line-height: 32px;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    line-height: 24px;
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+    font-weight: 500;
+    margin-bottom: 32px;
+  }
+
+  button {
+    background-color: $secundary-color;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: $white;
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+// End of Banner
+.drones {
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+
+  h2 {
+    margin-top: 64px;
+    font-size: 48px;
+    line-height: 56.25px;
+    color: $primary-color;
+    margin-bottom: 75px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+    h3 {
+      color: $primary-color;
+      font-size: 18px;
+      line-height: 21.09px;
+    }
+  }
+
+  .card {
+    padding: 0 50px;
+
+      p {
+        font-family: 'Roboto Mono';
+        font-size: 14px;
+        font-weight: 500;
+        color: #6A6A6A;
+      }
+  }
+
+  .icon-camera {
+    width: 58.67px;
+    height: 58.67px;
+  }
+}

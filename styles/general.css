@@ -1,0 +1,148 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-nav {
+  background: linear-gradient(91.77deg, #5D35B5 0%, #C067D1 98.9%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0;
+}
+.bg-nav .logo {
+  align-self: center;
+}
+.bg-nav .navegation {
+  color: #fff;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+}
+.bg-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.bg-nav li {
+  padding-top: 25px;
+  position: relative;
+}
+.bg-nav li::after {
+  content: "";
+  height: 22px;
+  width: 2px;
+  background: #9E51AD;
+  display: inline-block;
+  position: absolute;
+  right: -15px;
+}
+.bg-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url(../imgs/bg-index.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .banner-write {
+  color: #fff;
+  text-align: center;
+}
+.banner h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  line-height: 32px;
+  margin-bottom: 0px;
+}
+.banner h2 {
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.banner button {
+  background-color: #C167D1;
+  padding: 10px 30px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.drones {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.drones h2 {
+  margin-top: 64px;
+  font-size: 48px;
+  line-height: 56.25px;
+  color: #703EBB;
+  margin-bottom: 75px;
+}
+.drones .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.drones .card-container h3 {
+  color: #703EBB;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+.drones .card {
+  padding: 0 50px;
+}
+.drones .card p {
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  font-weight: 500;
+  color: #6A6A6A;
+}
+.drones .icon-camera {
+  width: 58.67px;
+  height: 58.67px;
+}
+
+@media only screen and (max-width: 700px) {
+  .bg-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    justify-content: center;
+  }
+  .bg-nav .logo {
+    padding-top: 50px;
+  }
+  .bg-nav li {
+    left: -10px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .drones h2 {
+    font-size: 40px;
+  }
+  .drones .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .banner h1 {
+    line-height: 50px;
+  }
+}
+
+/*# sourceMappingURL=general.css.map */
