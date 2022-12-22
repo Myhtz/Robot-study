@@ -67,7 +67,7 @@ $white:#fff;
   background-image: url(../imgs/bg-index.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -76,6 +76,7 @@ $white:#fff;
   .banner-write {
     color:$white;
     text-align: center;
+    margin-top: 100px;
   }
 
   h1 {

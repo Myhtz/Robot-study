@@ -14,8 +14,12 @@
   li {
     left: -10px;
   }
+}
 
- 
+.banner {
+  .banner-write {
+    margin-top: 0px;
+  }
 }
 
 .drones {
@@ -74,6 +78,23 @@
       display: flex;
       flex-wrap: wrap;
     }
+  }
+  .banner {
+    .banner-write {
+      margin-top: 0px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+      
+        h2 {
+          font-size: 16px;
+        }
+      
+        button {
+          font-size: 16px;
+        }
   }
 } 
 
