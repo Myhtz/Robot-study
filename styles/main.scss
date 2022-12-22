@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 // Colors
@@ -18,6 +19,8 @@ $white:#fff;
   width: 100%;
   height: 100px;
   margin-bottom: 0;
+  position: fixed;
+  top: 0;
 
   .logo {
     align-self: center;
@@ -91,6 +94,7 @@ $white:#fff;
   }
 
   button {
+    border: none;
     background-color: $secundary-color;
     padding: 10px 30px;
     border-radius: 6px;
@@ -144,4 +148,36 @@ $white:#fff;
     height: 58.67px;
   }
   // End of Description
+}
+// Footer
+.bg-footer {
+  margin-top: 60px;
+  background: $gradient-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -0px;
+  width: 100%;
+
+  span {
+    color: $white;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+    img {
+      border: 1px solid white;
+      padding: 6px;
+      border-radius: 6px;
+    }
+    .texto-footer {
+      align-self:center;
+    }
+  }
+
 }
